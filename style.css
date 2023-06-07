@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .card {
+    position: relative;
+    flex-basis: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .card a {
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    padding: 5px 10px;
+  }
+  
+  .card a:first-child {
+    left: 10px;
+  }
+  
+  .card a:last-child {
+    right: 10px;
+  }
+  
+  .about-me {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 40%;
+  }
+  
+  .about-me img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+    }
+  
+    .card {
+      flex-basis: 100%;
+    }
+  
+    .about-me {
+      flex-basis: 100%;
+    }
+  }
