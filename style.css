@@ -12,12 +12,19 @@
   header {
     text-align: center;
     margin-bottom: 40px;
+    background-color: #333;
+    padding: 10px;
   }
   
   header h1 {
     font-size: 32px;
-    color: #333;
+    color: #fff;
   }
+  header h2 {
+    font-size: 20px;
+    color: #fff;
+  }
+  
   
   .card-container {
     display: flex;
@@ -78,7 +85,7 @@
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-left: 40%;
+    
   }
   
   .about-me img {
